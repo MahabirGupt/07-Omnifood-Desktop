@@ -15,7 +15,7 @@ Default:1
 
 - Primary:#e67e22
 - Tints:#fdf2e9
-- Shades:
+- Shades:#cf711f
 - Accents:
 - Greys:
 #555
@@ -45,7 +45,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   /* reset line-height */
   line-height: 1;
   font-weight: 400;
@@ -84,6 +84,7 @@ body {
 .btn:link,
 .btn:visited {
   font-size: 2rem; /*2rem=20px*/
+  font-weight: 600;
   display: inline-block;
   padding: 1.6rem 3.2rem; /*top and bottom 1.6rem left and right 3.2rem*/
   border-radius: 9px;
@@ -126,4 +127,46 @@ body {
 /* using helper class to create margin right */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.delivered-meals {
+  /* displaying the images and text side by side */
+  display: flex; /*use flex instead of grid if size of columns is not important*/
+  /* let the content determine the sizes */
+
+  align-items: center; /* to centre img and text*/
+  gap: 1.6rem;
+  /* create vertical spacing between btns and imgs */
+  margin-top: 8rem;
+}
+
+/* "delivered-imgs" is also a flex container */
+.delivered-imgs {
+  display: flex;
+}
+
+/* selecting img using descendent selector */
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  /* to overlap the imgs */
+  margin-right: -1.6rem;
+
+  /* to create a border around the img */
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0; /*can use margin-right also*/
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* selecting text using descendent selector */
+.delivered-text span {
+  color: #cf711f;
+  /* make the text bolder */
+  font-weight: 700;
 }
