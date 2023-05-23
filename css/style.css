@@ -62,6 +62,31 @@ body {
 /* **************************** */
 /* GENERAL REUSABLE COMPONENTS */
 /* **************************** */
+
+/* Creating a reusable container */
+.container {
+  /* to centre the viewport */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  /* set it to centre */
+  margin: 0 auto;
+}
+
+/* Creating a reusable grid */
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+/* 2-cols means 2 columns */
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr); /*same as typing 1fr 1fr*/
+}
+/* 3-cols means 3 columns */
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr); /*same as typing 1fr 1fr*/
+}
+
 .heading-primary {
   font-size: 5.2rem; /*1rem = 10px 62px=1rem*/
   font-weight: 700;
@@ -182,6 +207,7 @@ body {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0; /*top 4.8rem and bottom 9.6rem*/
 }
+/* creating a container */
 .hero {
   max-width: 130rem; /*1rem=10px 1300px=130rem*/
   /* to centre the div */
@@ -249,4 +275,12 @@ body {
   color: #cf711f;
   /* make the text bolder */
   font-weight: 700;
+}
+
+/* **************************** */
+/* HOW IT WORKS SECTION */
+/* **************************** */
+.section-how {
+  padding: 9.6rem 0;
+  background-color: aqua;
 }
