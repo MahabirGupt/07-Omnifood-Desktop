@@ -38,6 +38,7 @@ Paragraph: 1.6
 --- 06 BORDER-RADIUS
 
 Default: 9px
+Medium: 11px
 
 --- 07 WHITESPACE
 
@@ -143,7 +144,8 @@ body {
   border-radius: 9px;
   text-decoration: none;
   /* Always put transistion on the original "state" */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -173,8 +175,40 @@ body {
   /* Trick to add border inside a button */
   box-shadow: inset 0 0 0 3px #fff;
 }
+.link:link,
+.link:visited {
+  /* in order to use padding */
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  /* to add the line at the bottom of the link */
+  border-bottom: 1px solid currentColor; /*use currentColor keyword*/
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* to remove the line for the link when hovering */
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER/SETTING CLASSES */
 
 /* using helper class to create margin right */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+/* using helper class to create margin bottom */
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+/* redefine the strong element */
+strong {
+  font-weight: 500; /*instead of default 700*/
 }

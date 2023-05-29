@@ -239,3 +239,115 @@
   /* can also use z-index here */
   /* z-index: 10; */
 }
+
+/* **************************** */
+/* MEALS SECTION */
+/* **************************** */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); /* 0.075=7.5% */
+  /* to round the card */
+  border-radius: 11px;
+  /* To round the img as well */
+  overflow: hidden;
+  /* to create animation */
+  transition: all 0.4s;
+}
+/* using hover Pseudo class */
+.meal:hover {
+  /* To make the image move up */
+  transform: translateY(-1.2rem); /*horizontal 2rem vertical 2rem*/
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06); /* 0.06=6% */
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  /* to create gap between tags change to flex */
+  display: flex;
+  gap: 0.4rem;
+}
+.tag {
+  /* to apply padding change to inline-block */
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  /* can't use border-radius:50% */
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+/* style the unordered list */
+.meal-attributes {
+  /* get rid of the bullet points */
+  list-style: none;
+  /* create flex in the parent container */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  /* parent element of meal-icon */
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+.meal-img {
+  width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.list {
+  /* to get rid of the bullet points */
+  list-style: none;
+  /* it is the parent element of .list-item 
+.list-icon and span */
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  /* it is the parent element of .list-icon and span  */
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
