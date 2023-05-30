@@ -351,3 +351,38 @@
   height: 3rem;
   color: #e67e22;
 }
+
+/* **************************** */
+/* TESTIMONIALS SECTION */
+/* **************************** */
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+/* testimonials is the parent element */
+.testimonials {
+  /* create a new 2-col grid */
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); must have comma between 2 and 1fr */
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+/* testimonials img */
+.testimonial-img {
+  width: 6.4rem;
+  /* to make the img round since it is a sq img */
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8; /*not 1.8rem because it is a multiplier*/
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  /* smaller font-size due to visual hierachy */
+  font-size: 1.6rem;
+  color: #777;
+}
