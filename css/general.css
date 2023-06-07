@@ -34,6 +34,9 @@ Paragraph: 1.6
 
 - Accents:
 - Greys:
+
+#888
+#767676 (lightest grey allowed on white, #fff)
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
@@ -115,6 +118,10 @@ body {
 /* 4-cols means 4 columns */
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr); /*same as typing 1fr 1fr*/
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
